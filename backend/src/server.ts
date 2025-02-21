@@ -13,7 +13,8 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     credentials:true,
-    origin:["http://localhost:4200"]
+    origin:["http://deploy-mern-1whq.vercel.app"],
+    methods:["POST", "GET]
 }));
 
 app.use("/api/foods", foodRouter);
