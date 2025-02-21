@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors({
     credentials:true,
     origin:["http://deploy-mern-1whq.vercel.app"],
-    methods:["POST", "GET]
+    methods:["POST", "GET"]
 }));
 
 app.use("/api/foods", foodRouter);
